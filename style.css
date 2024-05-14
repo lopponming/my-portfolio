@@ -1,0 +1,64 @@
+/* basic CSS reset */
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* grid container */
+.grid-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+/* whole page body styles */
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #1E1C24;
+}
+
+
+/* header styles */
+header {
+    color: #E1E1E1;
+    padding: 20px 25px 0px 25px;
+}
+
+
+/* article styles */
+article{
+    color: #E1E1E1;
+    padding: 50px 25px;
+}
+
+
+/* footer styles */
+footer {
+    padding: 0;
+}
+
+.footer-info {
+    background-color: #96B194;
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 50px;
+}
+
+.footer-info > div {
+    flex: 2;
+    margin: 0 10px;
+}
+
+.footer-info ul, .footer-info ol, .footer-social-media li {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.creator {
+    background-color: #FFAF82;
+    max-height: 85px;
+    padding: 50px 25px;
+    text-align: center;
+}
+
+/* styles */
