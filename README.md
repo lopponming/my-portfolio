@@ -1,2 +1,2 @@
 # my-portfolio
-my ux/graphic design portfolio that I designed in Figma
+my ux/graphic design portfolio that I designed in Figma (2024)
