@@ -25,9 +25,27 @@ header {
     padding: 20px 25px 0px 25px;
 }
 
+header a {
+    text-decoration: none;
+    color: #E1E1E1;
+}
+
+/* navigation links styles */
 nav {
     display: flex;
     justify-content: space-between
+}
+
+.nav-links a {
+    transition: color 0.3s;
+}
+
+.nav-links a:hover, .accessibility:hover {
+    color: #96B194;
+}
+
+.nav-links a.active {
+    text-decoration: underline;
 }
 
 .nav-social-media {
