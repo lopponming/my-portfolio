@@ -20,8 +20,44 @@ body {
 
 /* header styles */
 header {
+    background-color: #1E1C24;
     color: #E1E1E1;
     padding: 20px 25px 0px 25px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between
+}
+
+.nav-social-media {
+    display: flex;
+}
+
+.nav-social-media a {
+    margin-right: 10px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links a {
+    margin-right: 10px;
+}
+
+.accessibility {
+    display: flex;
+    align-items: center;
+}
+
+.accessibility img {
+    margin-left: 10px;
 }
 
 
