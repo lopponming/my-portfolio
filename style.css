@@ -143,9 +143,6 @@ h3.outline {
 article {
     color: #E1E1E1;
     padding: 120px 0 0 0;
-    /*display: flex;
-    flex-direction: column;
-    align-items: center;*/
 }
 
 .article-content {
@@ -167,11 +164,17 @@ article {
 }
 
 .miranda-text h1.outline {
-    font-size: 80px;
     text-align: left;
-    -webkit-text-stroke: 1px #E1E1E1;
-    color: transparent;
-    font-weight: bold;
+    /*-webkit-text-stroke: 1px #E1E1E1;
+    color: transparent; */
+    color: #96B194; /* Set the color of the stroke */
+    -webkit-text-stroke: 0.1px #E1E1E1; /* Set the color of the text */
+    -webkit-text-fill-color: transparent; /* Hide the original text */
+    text-shadow:
+        4px 4px 0 #96B194, /* Top left */
+        4px 4px 0 #96B194, /* Top right */
+        4px 4px 0 #96B194, /* Bottom left */
+        4px 4px 0 #96B194; /* Bottom right */
 }
 
 .miranda-text h1.outline:hover {
@@ -184,15 +187,15 @@ article {
     max-width: 100%;
 }
 
-/*.portrait-outline {
+/* .portrait-outline {
     position: absolute;
-    top: 80px;
-    left: 400px;
+    top: 90px;
+    left: 600px;
     width: 505px;
     height: 475px;
     border: 7px solid #FFAF82;
     z-index: 1;
-} */
+}*/
 
 .tagline {
     text-align: right;
@@ -216,6 +219,8 @@ article {
 
 .home-title {
     color: #FFAF82;
+    text-align: center;
+    margin: 50px 0 20px 0;
 }
 
 
