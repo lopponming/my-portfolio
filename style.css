@@ -25,7 +25,7 @@ header {
     padding: 20px 25px 0px 25px;
 }
 
-header a {
+header a, .work-grid a, .see-details a {
     text-decoration: none;
     color: #E1E1E1;
 }
@@ -66,7 +66,7 @@ nav {
 }
 
 .nav-links a {
-    margin-right: 10px;
+    margin-right: 40px;
 }
 
 .accessibility {
@@ -150,6 +150,11 @@ footer {
 .footer-info > div {
     flex: 2;
     margin: 0 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #1E1C24;
 }
 
 .footer-info ul, .footer-info ol, .footer-social-media li {
