@@ -17,6 +17,11 @@ body {
     background-color: #1E1C24;
 }
 
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url('Josefin_Sans/static/JosefinSans-Regular.ttf') format('truetype');
+}
+
 
 /* header styles */
 header {
@@ -95,13 +100,15 @@ article.content {
 h1 {
     margin: 0;
     font-size: 80px;
+    font-weight: bold;
 }
 
 h1.outline {
     font-size: 80px;
     text-align: left;
-    -webkit-text-stroke: 2px #E1E1E1;
+    -webkit-text-stroke: 1px #E1E1E1;
     color: transparent;
+    font-weight: bold;
 }
 
 .article-content.img {
