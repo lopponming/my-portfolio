@@ -54,6 +54,12 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 20px;
+}
+
+h3.outline {
+    color: transparent;
+    -webkit-text-stroke: 0.2px #E1E1E1;
 }
 
 .navigation {
@@ -136,23 +142,31 @@ nav {
 /* article styles */
 article {
     color: #E1E1E1;
-    padding: 160px 0 0 0;
+    padding: 120px 0 0 0;
+    /*display: flex;
+    flex-direction: column;
+    align-items: center;*/
+}
+
+.article-content {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.miranda-text {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin-right: 100px;
 }
 
-article.content {
-    position: relative;
-}
-
-h1 {
+.miranda-text h1 {
     margin: 0;
     font-size: 80px;
     font-weight: bold;
 }
 
-h1.outline {
+.miranda-text h1.outline {
     font-size: 80px;
     text-align: left;
     -webkit-text-stroke: 1px #E1E1E1;
@@ -160,9 +174,14 @@ h1.outline {
     font-weight: bold;
 }
 
+.miranda-text h1.outline:hover {
+    -webkit-text-stroke: 1px #96B194;
+}
+
 .article-content.img {
     display: block;
     margin: 20px 0;
+    max-width: 100%;
 }
 
 /*.portrait-outline {
@@ -177,6 +196,11 @@ h1.outline {
 
 .tagline {
     text-align: right;
+    margin-top: 30px;
+}
+
+.tagline h4 {
+    margin-top: 5px;
 }
 
 .tagline-green span {
@@ -185,9 +209,13 @@ h1.outline {
 
 .first-green-spacer {
     width: 100%;
-    height: 114px;
+    height: 80px;
     background-color: #96B194;
     padding: 0;
+}
+
+.home-title {
+    color: #FFAF82;
 }
 
 
