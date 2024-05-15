@@ -302,6 +302,34 @@ article {
 
 
 /* contact styles */
+.contact-outline {
+    border: 4px solid #FFAF82;
+    padding: 40px; /* lägg hid na betär än px så e ändrar enlit skärm */
+}
+
+.contact-info {
+    color: #E1E1E1;
+}
+
+.contact-info a {
+    color: #E1E1E1;
+    text-decoration: underline;
+}
+
+.contact-info a:hover {
+    color: #96B194;
+    text-decoration: underline;
+}
+
+.contact-info svg {
+    fill: #96B194;
+}
+
+.contact-info ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
 .back-to-top a {
     color: #FFAF82;
     text-decoration: none;
