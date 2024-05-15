@@ -82,7 +82,56 @@ nav {
 /* article styles */
 article{
     color: #E1E1E1;
-    padding: 50px 25px;
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article.content {
+    position: relative;
+}
+
+h1 {
+    margin: 0;
+    font-size: 80px;
+}
+
+h1.outline {
+    font-size: 80px;
+    text-align: left;
+    -webkit-text-stroke: 2px #E1E1E1;
+    color: transparent;
+}
+
+.article-content.img {
+    display: block;
+    margin: 20px 0;
+}
+
+/*.portrait-outline {
+    position: absolute;
+    top: 80px;
+    left: 400px;
+    width: 505px;
+    height: 475px;
+    border: 7px solid #FFAF82;
+    z-index: 1;
+} */
+
+.tagline {
+    text-align: right;
+}
+
+.tagline-green span {
+    color:#96B194;
+}
+
+.first-green-spacer {
+    width: 100%;
+    height: 114px;
+    background-color: #96B194;
+    padding: 0;
 }
 
 
