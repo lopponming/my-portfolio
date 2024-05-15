@@ -27,7 +27,7 @@ body {
 header {
     background-color: #1E1C24;
     color: #E1E1E1;
-    padding: 20px 25px 0px 25px;
+    padding: 20px 0px 0px 0px;
 }
 
 header a, .work-grid a, .see-details a {
@@ -35,18 +35,45 @@ header a, .work-grid a, .see-details a {
     color: #E1E1E1;
 }
 
+.header-divider {
+    height: 3px;
+    background-color: #FFAF82;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
 /* navigation links styles */
 nav {
     display: flex;
-    justify-content: space-between
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .nav-links a {
     transition: color 0.3s;
+    padding: 0 10px;
 }
 
-.nav-links a:hover, .accessibility:hover {
+.nav-links a:not(.work-link):hover, .accessibility:hover {
     color: #96B194;
+}
+
+.nav-links{
+    align-items: center;
+    justify-content: space-between;
 }
 
 .nav-links a.active {
@@ -83,11 +110,33 @@ nav {
     margin-left: 10px;
 }
 
+.work-button {
+    background-color: #96B194;
+    border-radius: 20px;
+    padding: 5px 10px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.work-button a {
+    color: #1E1C24;
+    display: block;
+    margin: 0;
+}
+
+.work-button:hover {
+    background-color: #FFAF82;
+}
+
 
 /* article styles */
-article{
+article {
     color: #E1E1E1;
-    padding: 50px 0px;
+    padding: 160px 0 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
