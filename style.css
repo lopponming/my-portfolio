@@ -349,6 +349,94 @@ article {
 }
 
 
+/* WORK page styles */
+.work-title-portfolio {
+    border: 2px solid #FFAF82;
+    display: inline-block;
+    padding: 25px 30px;
+}
+
+.portfolio-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 150px;
+    padding: 0 8vw;
+    gap: 40px;
+}
+
+/* switch img and description with every other portfolio item */
+.portfolio-item:nth-child(odd) .portfolio-description {
+    order: 2;
+}
+
+.portfolio-item:nth-child(odd) .portfolio-mockup {
+    order: 1;
+}
+
+.portfolio-item:nth-child(even) .portfolio-description {
+    order: 1;
+}
+
+.portfolio-item:nth-child(even) .portfolio-mockup {
+    order: 2;
+}
+
+.portfolio-tags {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.work-number {
+    color: #FFAF82;
+    font-size: 50px;
+}
+
+.work-tag {
+    color: #96B194;
+    margin-left: 5px;
+    border: 2px solid #96B194;
+    border-radius: 20px;
+    padding: 3px 8px;
+}
+
+.work-title-portfolioPage {
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.portfolio-button {
+    margin-top: 20px;
+}
+
+.see-case-study {
+    background-color: #96B194;
+    color: #1E1C24;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.see-case-study:hover {
+    background-color: #FFAF82;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* footer styles */
 footer {
     padding: 0;
