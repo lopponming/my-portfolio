@@ -444,6 +444,40 @@ article {
 
 
 
+/* ABOUT page styles */
+.about-this-portfolio {
+    padding: 0 120px;
+}
+
+.about-this-portfolio h3 {
+    color: #FFAF82;
+}
+
+.info-about-portfolio {
+    margin: 20px 50px 0 0;
+}
+
+.the-color-palette {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.color-palette {
+    background-color: #E1E1E1;
+    height: 80px;
+    width: 80px;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 /* footer styles */
