@@ -350,6 +350,9 @@ article {
 
 
 /* WORK page styles */
+.article-portfolio {
+    padding: 80px 0 0 0;
+}
 .work-title-portfolio {
     border: 2px solid #FFAF82;
     display: inline-block;
@@ -364,6 +367,7 @@ article {
     margin-bottom: 150px;
     padding: 0 8vw;
     gap: 40px;
+    /*max-height: 500px;*/
 }
 
 /* switch img and description with every other portfolio item */
@@ -382,6 +386,11 @@ article {
 .portfolio-item:nth-child(even) .portfolio-mockup {
     order: 2;
 }
+
+/*.portfolio-mockup img {
+    max-width: 100%;
+    height: auto;
+}*/
 
 .portfolio-tags {
     display: flex;
