@@ -445,6 +445,31 @@ article {
 
 
 /* ABOUT page styles */
+.about-section {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+    padding: 0 0 120px;
+}
+
+.profile-title {
+    color: #FFAF82;
+}
+
+.profile-info {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.profile-image {
+    
+}
+
+.about-education {
+    grid-column: 1 / span 2;
+}
+
 .about-this-portfolio {
     padding: 0 120px;
 }
