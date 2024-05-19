@@ -477,7 +477,7 @@ article {
     padding: 5vh;
 }
 
-.skill-list, .education-list {
+.skill-list, .education-list, .about-personality li {
     color: #FFAF82;
 }
 
@@ -488,6 +488,13 @@ article {
 .education-list {
     list-style-type: none;
     padding-left: 0;
+}
+
+.personality-and-lang {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10vw;
 }
 
 .about-this-portfolio {
