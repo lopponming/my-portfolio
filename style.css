@@ -122,6 +122,11 @@ h3.outline {
     padding: 10px;
     color: #96B194;
     border-bottom: 2px solid #FFAF82;
+    cursor: pointer;
+}
+
+.dropdown-content ul li:hover {
+    color: #FFAF82;
 }
 
 .accessibility-dropdown:hover .dropdown-content {
@@ -728,4 +733,7 @@ footer a {
     text-align: center;
 }
 
-/* styles */
+/* styles for the accessibility toggles */
+.grayscale {
+    filter: grayscale(100%);
+}
