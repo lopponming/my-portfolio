@@ -497,6 +497,37 @@ article {
     padding: 0 10vw;
 }
 
+.language-skill {
+    margin-bottom: 20px;
+}
+
+.skill-info {
+    display: flex;
+    align-items: center;
+}
+
+.skill-bar {
+    flex: 1;
+    height: 20px;
+    border: 3px solid #FFAF82;
+    border-radius: 20px;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.skill-bar::before {
+    content: "";
+    display: block;
+    width: var(--fill-level);
+    height: 100%;
+    background-color: #FFAF82;
+    border-radius: 20px;
+}
+
+.skill-info h4 {
+    margin-right: 10px;
+}
+
 .about-this-portfolio {
     padding: 0 120px;
 }
