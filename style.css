@@ -459,6 +459,37 @@ article {
     margin-bottom: 20px;
 }
 
+.tools-and-skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10vw;
+}
+
+.tool-icons {
+    display: flex;
+    align-items: center;
+    color: #FFAF82;
+}
+
+.skills {
+    border: 2px solid #96B194;
+    padding: 5vh;
+}
+
+.skill-list, .education-list {
+    color: #FFAF82;
+}
+
+.about-education {
+    padding: 7vh 10vw;
+}
+
+.education-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
 .about-this-portfolio {
     padding: 0 120px;
 }
