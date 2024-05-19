@@ -447,10 +447,10 @@ article {
 /* ABOUT page styles */
 .about-section {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto;
     gap: 20px;
-    padding: 0 0 120px;
+    padding: 0 120px;
 }
 
 .profile-title {
