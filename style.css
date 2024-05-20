@@ -741,3 +741,69 @@ footer a {
 .grayscale {
     filter: grayscale(100%);
 }
+
+/* styles for the homepage popups */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #1E1C24;
+    color: #E1E1E1;
+    padding: 20px;
+    border: 2px solid #FFAF82;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000; 
+    width: 70%;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.popup img {
+    width: 40%;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+}
+
+.homepage-work-tag {
+    color: #96B194;
+    margin-left: 5px;
+    padding: 3px 8px;
+}
+
+.popup h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.popup p {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.timestamp-hours-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.timestamp-hours-container p {
+    margin-right: 10px;
+}
+
+
+.popup-close-btn {
+    background-color: #555;
+    color: #E1E1E1;
+    border: none;
+    padding: 5px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.popup-close-btn:hover {
+    background-color: #FFAF82;
+}
