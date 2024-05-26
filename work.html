@@ -205,7 +205,7 @@
                     <h3 class="work-title-portfolioPage">COMING SOON</h3>
                     <p class="portfolio-explanation"></p>
                     <div class="portfolio-button">
-                        <a href="" class="see-case-study">SEE CASE STUDY</a>
+                        <a href="" class="see-case-study" onClick="openWIPPopup(); return false;">SEE CASE STUDY</a>
                     </div>
                 </div>
                 <div class="portfolio-mockup">
@@ -217,6 +217,16 @@
                 <a href="">back to top ^</a>
             </div>
         </article>
+
+        <!-- WORK IN PROGRESS POPUP -->
+        <div id="wip-popup" class="popup hidden">
+            <div class="popup-content">
+                <span class="close-btn" onclick="closeWIPPopup()">&times;</span>
+                <img src="images/wip_icon.svg" alt="Work in Progress">
+                <h2>Work in Progress</h2>
+                <p>This section is still under construction. Check back soon!</p>
+            </div>
+        </div>
     
         <!-- FOOTER -->
         <footer class="footer">

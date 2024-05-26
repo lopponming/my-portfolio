@@ -104,3 +104,14 @@ function openPopup(image, title, tag, description, timestamp, hours) {
     // Append the popup to the body
     document.body.appendChild(popup);
 }
+
+
+// POPUP for WORK IN PROGRESS
+function openWIPPopup() {
+    document.getElementById('wip-popup').classList.remove('hidden');
+}
+
+function closeWIPPopup() {
+    document.getElementById('wip-popup').classList.add('hidden');
+}
+
