@@ -115,3 +115,9 @@ function closeWIPPopup() {
     document.getElementById('wip-popup').classList.add('hidden');
 }
 
+// hamburger menu things
+function toggleMenu() {
+    var navLinks = document.getElementById('nav-links');
+    navLinks.classList.toggle('show');
+}
+
