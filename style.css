@@ -63,7 +63,45 @@ p {
         width: 90%;
         margin: 0 auto;
     }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #1E1C24;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        z-index: 1000;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links a,
+    .nav-links .accessibility-dropdown {
+        width: 50%;
+    }
+
+    .accessibility-dropdown .dropdown-content {
+        display: none;
+    }
+
+    .accessibility-dropdown:hover .dropdown-content {
+        display: block;
+    }
     
+}
+
+.menu-icon {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
 }
 
 
@@ -111,6 +149,13 @@ h3.outline {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+}
+
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
 }
 
 .nav-links a {

@@ -35,26 +35,26 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // POP-UP portfolio works on the homepage
 function openPopup(image, title, tag, description, timestamp, hours) {
-    // Create the popup container
+    // create the popup container
     const popup = document.createElement('div');
     popup.classList.add('popup');
 
-    // Create the image element
+    // create the image element
     const img = document.createElement('img');
     img.src = image;
     img.alt = title;
     img.classList.add('popup-image');
 
-    // Create the tag element
+    // create the tag element
     const tagElement = document.createElement('div');
     tagElement.textContent = tag;
     tagElement.classList.add('homepage-work-tag');
 
-    // Create the title element
+    // create the title element
     const titleElement = document.createElement('h2');
     titleElement.textContent = title;
 
-    // Create the timestamp and hours elements
+    // create the timestamp and hours elements
     const timestampHoursContainer = document.createElement('div');
     timestampHoursContainer.classList.add('timestamp-hours-container');
 
@@ -81,11 +81,11 @@ function openPopup(image, title, tag, description, timestamp, hours) {
     timestampHoursContainer.appendChild(timestampElement);
     timestampHoursContainer.appendChild(hoursElement);
 
-    // Create the description element
+    // create the description element
     const descriptionElement = document.createElement('p');
     descriptionElement.textContent = description;
 
-    // Create the close button
+    // create the close button
     const closeButton = document.createElement('button');
     closeButton.textContent = 'Close';
     closeButton.classList.add('popup-close-btn');
@@ -93,7 +93,7 @@ function openPopup(image, title, tag, description, timestamp, hours) {
         popup.remove();
     });
 
-    // Append elements to the popup container
+    // append elements to the popup container
     popup.appendChild(img);
     popup.appendChild(tagElement);
     popup.appendChild(titleElement);
@@ -101,7 +101,7 @@ function openPopup(image, title, tag, description, timestamp, hours) {
     popup.appendChild(descriptionElement);
     popup.appendChild(closeButton);
 
-    // Append the popup to the body
+    // append the popup to the body
     document.body.appendChild(popup);
 }
 
@@ -117,7 +117,6 @@ function closeWIPPopup() {
 
 // hamburger menu things
 function toggleMenu() {
-    var navLinks = document.getElementById('nav-links');
-    navLinks.classList.toggle('show');
+    document.querySelector('.nav-links').classList.toggle('show');
 }
 
