@@ -398,6 +398,10 @@ article {
     justify-content: center;
 }
 
+a.more-abt-me {
+    text-decoration: none;
+}
+    
 
 /* contact styles */
 .contact-outline {
