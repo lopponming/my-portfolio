@@ -116,19 +116,17 @@ function closeWIPPopup() {
 }
 
 // hamburger menu things
-function toggleMenu() {
-    document.querySelector('.nav-links').classList.toggle('show');
-}
-
-const mobileMenuIcon = document.querySelector('.menu-icon');
-  const menu = document.querySelector('.menu');
-
-  mobileMenuIcon.addEventListener('click', () => {
-    menu.classList.toggle('open');
-  });
-
-  document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
     const mobileMenuIcon = document.querySelector('.menu-icon');
+    const navLinks = document.querySelector('.nav-links');
+
+    // toggle menu visibility
+    function toggleMenu() {
+        navLinks.classList.toggle('show');
+    }
+
+    // add event listener to the menu icon
     mobileMenuIcon.addEventListener('click', toggleMenu);
 });
+
 

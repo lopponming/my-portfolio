@@ -62,6 +62,22 @@ p {
         font-size: 14px;
     }
 
+    .grid-container {
+        grid-template-columns: 1fr;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .grid-container img {
+        width: 100%;
+        margin: 0 auto 10px auto;
+        max-width: 70vw;
+    }
+
+    .miranda-text {
+        align-items: center;
+    }
+
     .menu-icon {
         display: block;
         cursor: pointer;
@@ -117,6 +133,31 @@ p {
     .popup-content {
         width: 90%;
         margin: 0 auto;
+    }
+
+    .article-content {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .about-columns {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .about-content p {
+        margin: 2vw;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .about-columns img {
+        width: 100%;
+        max-width: 70vw;
+    }
+
+    .green-rectangle {
+        display: none;
     }
     
 }
@@ -383,6 +424,7 @@ article {
 .tagline {
     text-align: right;
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .tagline h4 {
@@ -791,7 +833,7 @@ footer {
 .nav-links,
 .footer-contacts,
 .footer-social-media {
-    display: flex;
+    
     align-items: center;
 }
 
