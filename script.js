@@ -117,16 +117,20 @@ function closeWIPPopup() {
 
 // hamburger menu things
 document.addEventListener('DOMContentLoaded', () => {
+    // Select elements
     const mobileMenuIcon = document.querySelector('.menu-icon');
     const navLinks = document.querySelector('.nav-links');
 
-    // toggle menu visibility
-    function toggleMenu() {
-        navLinks.classList.toggle('show');
+    // Check if the elements exist
+    if (mobileMenuIcon && navLinks) {
+        // Function to toggle menu visibility
+        function toggleMenu() {
+            navLinks.classList.toggle('show');
+        }
+
+        // Add event listener to the menu icon
+        mobileMenuIcon.addEventListener('click', toggleMenu);
+    } else {
+        console.error('Menu icon or nav links not found in the DOM.');
     }
-
-    // add event listener to the menu icon
-    mobileMenuIcon.addEventListener('click', toggleMenu);
 });
-
-
