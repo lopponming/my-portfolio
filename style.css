@@ -29,8 +29,20 @@ p {
 
 
 
-/* styles larger screens */
+/* styles larger screens aka desktop */
 @media (min-width: 768px) {
+    .menu-icon {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex;
+    }
+
+    .nav-links a {
+        margin-right: 40px;
+    }
+
     .col-6 {
         flex: 0 0 50%;
     }
@@ -44,11 +56,54 @@ p {
     }
 }
 
-/* styles for mobile screen */
+/* styles for mobile screen and tablets */
 @media (max-width: 767px) {
-
     body {
         font-size: 14px;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+        padding: 10px;
+        color: #E1E1E1;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #1E1C24;
+        position: absolute;
+        top: 60px;
+        z-index: 1000;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links a,
+    .nav-links .accessibility-dropdown {
+        width: 50%;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .accessibility-dropdown .dropdown-content {
+        display: none;
+    }
+
+    .accessibility-dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
     }
     
     h1 {
@@ -63,46 +118,26 @@ p {
         width: 90%;
         margin: 0 auto;
     }
-
-    .menu-icon {
-        display: block;
-    }
-
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: #1E1C24;
-        position: absolute;
-        top: 50px;
-        left: 0;
-        z-index: 1000;
-    }
-
-    .nav-links.show {
-        display: flex;
-    }
-
-    .nav-links a,
-    .nav-links .accessibility-dropdown {
-        width: 50%;
-    }
-
-    .accessibility-dropdown .dropdown-content {
-        display: none;
-    }
-
-    .accessibility-dropdown:hover .dropdown-content {
-        display: block;
-    }
     
 }
 
-.menu-icon {
-    display: none;
-    font-size: 1.5em;
-    cursor: pointer;
+
+/* styles for mobile only */
+@media (max-width: 480px) {
+    body {
+      font-size: 12px;
+    }
+  
+    .container {
+      padding: 10px;
+    }
+
+    .item {
+        flex: 1 1 100%;
+    }
 }
+
+
 
 
 
@@ -245,9 +280,9 @@ h3.outline {
     align-items: center;
 }
 
-.nav-links {
+/* .nav-links {
     display: flex;
-}
+} */
 
 .nav-links a {
     margin-right: 40px;

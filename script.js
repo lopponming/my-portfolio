@@ -120,3 +120,15 @@ function toggleMenu() {
     document.querySelector('.nav-links').classList.toggle('show');
 }
 
+const mobileMenuIcon = document.querySelector('.menu-icon');
+  const menu = document.querySelector('.menu');
+
+  mobileMenuIcon.addEventListener('click', () => {
+    menu.classList.toggle('open');
+  });
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const mobileMenuIcon = document.querySelector('.menu-icon');
+    mobileMenuIcon.addEventListener('click', toggleMenu);
+});
+
