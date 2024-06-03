@@ -96,7 +96,7 @@ p {
     }
 
     .nav-links.show {
-        display: flex;
+        display: block;
     }
 
     .nav-links a,
@@ -159,7 +159,18 @@ p {
     .green-rectangle {
         display: none;
     }
+
+    .portfolio-item {
+        flex-direction: column;
+    }
+
+    .about-profile {
+        flex-wrap: wrap;
+    }
     
+    .cv-link {
+        margin: 10px;
+    }
 }
 
 
